@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+  width: 80%;
+}
+
+header {
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+input {
+  padding: 10px;
+  font-size: 1em;
+  margin-right: 10px;
+  width: 200px;
+}
+
+button {
+  padding: 10px 15px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.meme-container {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-start;
+  overflow-x: auto; /* Enables horizontal scrolling */
+  padding: 10px;
+  max-width: 100%;
+}
+
+.meme-card {
+  background-color: white;
+  border-radius: 10px;
+  width: 250px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  flex-shrink: 0; /* Prevents the cards from shrinking */
+}
+
+.meme-card img {
+  width: 100%;
+  border-bottom: 2px solid #eee;
+}
+
+.meme-card h3 {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+.meme-card p {
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.meme-card a {
+  text-decoration: none;
+  color: #007bff;
+}
